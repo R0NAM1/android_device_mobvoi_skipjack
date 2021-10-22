@@ -17,7 +17,7 @@ mkdir skipjack_twrp
 cd skipjack_twrp/
 mkdir -p device/mobvoi/
 git clone https://github.com/R0NAM1/android_device_mobvoi_skipjack.git device/mobvoi/skipjack
-git clone --verbose --single-branch --depth=1 --branch android-msm-skipjack-3.18-oreo-wear-dr https://android.googlesource.com/kernel/msm device/mobvoi/skipjack/kernel
+git clone --verbose --single-branch --depth=1 --branch android-msm-skipjack-3.18-pie-wear-dr https://android.googlesource.com/kernel/msm device/mobvoi/skipjack/kernel
 repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-6.0
 repo sync
 ```
