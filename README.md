@@ -22,6 +22,11 @@ repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.
 repo sync
 ```
 
+Now we need to patch the Kernel To Get USB To work, but instead of patching it in this instance I am just replacing the defconfig directly with a known working one.
+```
+cp device/mobvoi/skipjack/defconfig-WorkingUSB device/mobvoi/skipjack/kernel/arch/arm/configs/skipjack_defconfig
+```
+
 Ready to compile? WRONG: For some reason I needed to run 'sudo chown 777 -R *' (Something something git keeps permissions blah blah)
 
 Now we can compile:
